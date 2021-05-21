@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Twig Company | разработка твоего - успешного сайта. Создание сайтов , интернет магазин , сайт-визитка</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <!--preloader-->
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+  <!--mobile-->
+
+  <!--Custom Cursore-->
+  <div class="custom-cursor"></div>
+  <!--/Preloader-->
+  <div class="wrapper">
+	<header>
+		<div class="menu">
+			<div class="menu_logo logo">
+				<a href="#"><img src="/img/logo.png" alt="сайт на основе ваших предпочтений"></a>
+			</div>
+			<div class="menu_nav">
+				<a href="#">
+					<li>о нас</li>
+				</a>
+				<a href="#">
+					<li>услуги</li>
+				</a>
+				<a href="#">
+					<li>портфолио</li>
+				</a>
+				<a href="#">
+					<li>контакты</li>
+				</a>
+			</div>
+			<div class="menu_social">
+				<a href="#"><img src="img/ico/instagram.svg" alt="instagram"></a>
+				<a href="#"><img src="img/ico/whatsapp.svg" alt="whatsapp"></a>
+				<a href="#"><img src="img/ico/vk.svg" alt="vk"></a>
+			</div>
+		</div>
+			<div class="fullscreen-bg">
+				<div class="overlay">
+					<div class="content">
+						<span>Веб - студия</span>
+						<h1>Создаем под ключ</h2>
+						<span class="element"></span>
+						<div class="content_button-wrapper">
+							<button class="content_button">заказать</button>
+						</div>
+					</div>
+				</div>
+				<video loop="" muted="" autoplay="" poster="img/background/1.png" class="fullscreen-bg__video">
+					<source src="img/background/1.mp4" type="video/mp4">
+				</video>
+			</div>
+	</header>
+  </div>
+
+  <!--Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script>
+      var typed = new Typed('.element', {
+        // Waits 1000ms after typing "First"
+        strings: ["landing page","интернет магазины","сайт-визитки"],
+        typeSpeed: 80,
+        backSpeed: 40,
+		loop: true,
+	  });   
+  </script>
+  <script>
+    $(window).on('load', function () {
+      var $preloader = $('#preloader'),
+      $svg_anm   = $preloader.find('.svg_anm');
+      $svg_anm.fadeOut();
+      $preloader.delay(700).fadeOut('slow');
+	  });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
